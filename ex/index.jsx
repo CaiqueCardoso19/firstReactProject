@@ -1,5 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Component from './components'
+import Family from './family'
 
-ReactDOM.render(<Component />, document.getElementById('app'))
+ReactDOM.render(
+    <div>
+        <Family />
+    </div>
+, document.getElementById('app'))
