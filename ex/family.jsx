@@ -1,12 +1,9 @@
 import React from 'react'
-import Member from './member'
+import { childrenWithProps } from '../utils/react-util'
 
 export default props => (
     <div>
-        <Member name='João' lastName='Silva' />
-        <Member name='Allan' lastName='Reis' />
-        <Member name='Caique' lastName='Reis' />
-        <Member name='Guilherme' lastName='Silva' />
-        <Member name='Flavio' lastName='Silva' />
+        <h1>Família</h1>
+        { childrenWithProps(props.children, props) }
     </div>    
 )
